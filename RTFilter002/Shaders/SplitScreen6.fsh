@@ -1,0 +1,21 @@
+precision highp float;
+uniform sampler2D Texture;
+varying vec2 vTextureCoordinate;
+varying float vPolaroid;
+
+void main(void) {
+    
+    vec2 st = vTextureCoordinate.xy;
+    if (st.x < 1.0/3.0) {
+        st.x = st.x + 1.0/3.0;
+    } else if(st.x >= 2.0/3.0){
+        st.x = st.x - 1.0/3.0;
+    }
+    if (st.y < 0.5) {
+        st.y = st.y + 0.25;
+    } else {
+        st.y = st.y - 0.25;
+    }
+    vec4 mask = texture2D(Texture, st);
+    gl_FragColor = vec4(max(min(mask.rgb, 1.0 - vPolaroid),vPolaroid), 1);
+}

@@ -1,0 +1,643 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B7D28E2C25C70BA900483CED /* RTPickerPhotoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B7D28E2B25C70BA900483CED /* RTPickerPhotoManager.m */; };
+		B7D28E3225C7128800483CED /* UIImage+RTExt.m in Sources */ = {isa = PBXBuildFile; fileRef = B7D28E3125C7128800483CED /* UIImage+RTExt.m */; };
+		B7D28E3725C7C0B500483CED /* RTHud.m in Sources */ = {isa = PBXBuildFile; fileRef = B7D28E3625C7C0B500483CED /* RTHud.m */; };
+		B7DC678725C117E500FF09CA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B7DC678625C117E500FF09CA /* AppDelegate.m */; };
+		B7DC679225C117E600FF09CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7DC679125C117E600FF09CA /* Assets.xcassets */; };
+		B7DC679525C117E600FF09CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7DC679325C117E600FF09CA /* LaunchScreen.storyboard */; };
+		B7DC679825C117E600FF09CA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B7DC679725C117E600FF09CA /* main.m */; };
+		B7DC67A425C1188B00FF09CA /* RTHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7DC67A325C1188B00FF09CA /* RTHomeViewController.m */; };
+		B7DC67B425C11C2B00FF09CA /* RTPresent.m in Sources */ = {isa = PBXBuildFile; fileRef = B7DC67B325C11C2B00FF09CA /* RTPresent.m */; };
+		B7DC67C825C1264200FF09CA /* RTTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = B7DC67C725C1264200FF09CA /* RTTableViewDataSource.m */; };
+		B7DC67CD25C1596400FF09CA /* RTEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7DC67CC25C1596400FF09CA /* RTEditViewController.m */; };
+		B7DC67D225C15DCC00FF09CA /* RTEditGLTool.m in Sources */ = {isa = PBXBuildFile; fileRef = B7DC67D125C15DCC00FF09CA /* RTEditGLTool.m */; };
+		B7DC67EC25C1741200FF09CA /* Normal.fsh in Resources */ = {isa = PBXBuildFile; fileRef = B7DC67EA25C1741200FF09CA /* Normal.fsh */; };
+		B7DC67ED25C1741200FF09CA /* Normal.vsh in Resources */ = {isa = PBXBuildFile; fileRef = B7DC67EB25C1741200FF09CA /* Normal.vsh */; };
+		B7DC680225C1BCAD00FF09CA /* SplitScreen2.fsh in Resources */ = {isa = PBXBuildFile; fileRef = B7DC67F825C1BCAD00FF09CA /* SplitScreen2.fsh */; };
+		B7DC680325C1BCAD00FF09CA /* SplitScreen3.vsh in Resources */ = {isa = PBXBuildFile; fileRef = B7DC67F925C1BCAD00FF09CA /* SplitScreen3.vsh */; };
+		B7DC680425C1BCAD00FF09CA /* SplitScreen3.fsh in Resources */ = {isa = PBXBuildFile; fileRef = B7DC67FA25C1BCAD00FF09CA /* SplitScreen3.fsh */; };
+		B7DC680525C1BCAD00FF09CA /* SplitScreen4.vsh in Resources */ = {isa = PBXBuildFile; fileRef = B7DC67FB25C1BCAD00FF09CA /* SplitScreen4.vsh */; };
+		B7DC680625C1BCAD00FF09CA /* SplitScreen9.fsh in Resources */ = {isa = PBXBuildFile; fileRef = B7DC67FC25C1BCAD00FF09CA /* SplitScreen9.fsh */; };
+		B7DC680725C1BCAD00FF09CA /* SplitScreen9.vsh in Resources */ = {isa = PBXBuildFile; fileRef = B7DC67FD25C1BCAD00FF09CA /* SplitScreen9.vsh */; };
+		B7DC680825C1BCAD00FF09CA /* SplitScreen4.fsh in Resources */ = {isa = PBXBuildFile; fileRef = B7DC67FE25C1BCAD00FF09CA /* SplitScreen4.fsh */; };
+		B7DC680925C1BCAD00FF09CA /* SplitScreen6.vsh in Resources */ = {isa = PBXBuildFile; fileRef = B7DC67FF25C1BCAD00FF09CA /* SplitScreen6.vsh */; };
+		B7DC680A25C1BCAD00FF09CA /* SplitScreen2.vsh in Resources */ = {isa = PBXBuildFile; fileRef = B7DC680025C1BCAD00FF09CA /* SplitScreen2.vsh */; };
+		B7DC680B25C1BCAD00FF09CA /* SplitScreen6.fsh in Resources */ = {isa = PBXBuildFile; fileRef = B7DC680125C1BCAD00FF09CA /* SplitScreen6.fsh */; };
+		B7DC681725C1CDBE00FF09CA /* Gray.vsh in Resources */ = {isa = PBXBuildFile; fileRef = B7DC681625C1CDBE00FF09CA /* Gray.vsh */; };
+		B7DC681B25C1CDCE00FF09CA /* Gray.fsh in Resources */ = {isa = PBXBuildFile; fileRef = B7DC681A25C1CDCE00FF09CA /* Gray.fsh */; };
+		B7DC681E25C1D4A000FF09CA /* Negative.vsh in Resources */ = {isa = PBXBuildFile; fileRef = B7DC681D25C1D4A000FF09CA /* Negative.vsh */; };
+		B7DC682125C1D4AF00FF09CA /* Negative.fsh in Resources */ = {isa = PBXBuildFile; fileRef = B7DC682025C1D4AF00FF09CA /* Negative.fsh */; };
+		B7DC682425C1D8EC00FF09CA /* Mosaic4.vsh in Resources */ = {isa = PBXBuildFile; fileRef = B7DC682325C1D8EC00FF09CA /* Mosaic4.vsh */; };
+		B7DC682725C1D8FA00FF09CA /* Mosaic4.fsh in Resources */ = {isa = PBXBuildFile; fileRef = B7DC682625C1D8FA00FF09CA /* Mosaic4.fsh */; };
+		B7DC682B25C1DF0800FF09CA /* Mosaic6.vsh in Resources */ = {isa = PBXBuildFile; fileRef = B7DC682A25C1DF0800FF09CA /* Mosaic6.vsh */; };
+		B7DC682E25C1DF1300FF09CA /* Mosaic6.fsh in Resources */ = {isa = PBXBuildFile; fileRef = B7DC682D25C1DF1300FF09CA /* Mosaic6.fsh */; };
+		B7DC683225C1EC8300FF09CA /* Mosaic3.fsh in Resources */ = {isa = PBXBuildFile; fileRef = B7DC683025C1EC8300FF09CA /* Mosaic3.fsh */; };
+		B7DC683325C1EC8300FF09CA /* Mosaic3.vsh in Resources */ = {isa = PBXBuildFile; fileRef = B7DC683125C1EC8300FF09CA /* Mosaic3.vsh */; };
+		B7DC683A25C27EE900FF09CA /* Scale.vsh in Resources */ = {isa = PBXBuildFile; fileRef = B7DC683925C27EE900FF09CA /* Scale.vsh */; };
+		B7DC683E25C27EF800FF09CA /* Scale.fsh in Resources */ = {isa = PBXBuildFile; fileRef = B7DC683D25C27EF800FF09CA /* Scale.fsh */; };
+		B7DC684125C2878700FF09CA /* SoulOut.vsh in Resources */ = {isa = PBXBuildFile; fileRef = B7DC684025C2878700FF09CA /* SoulOut.vsh */; };
+		B7DC684425C2879500FF09CA /* SoulOut.fsh in Resources */ = {isa = PBXBuildFile; fileRef = B7DC684325C2879500FF09CA /* SoulOut.fsh */; };
+		B7DC684725C2927700FF09CA /* ScaleMove.vsh in Resources */ = {isa = PBXBuildFile; fileRef = B7DC684625C2927700FF09CA /* ScaleMove.vsh */; };
+		B7DC684A25C2928C00FF09CA /* ScaleMove.fsh in Resources */ = {isa = PBXBuildFile; fileRef = B7DC684925C2928C00FF09CA /* ScaleMove.fsh */; };
+		B7DC684D25C2999B00FF09CA /* Sparkle.vsh in Resources */ = {isa = PBXBuildFile; fileRef = B7DC684C25C2999B00FF09CA /* Sparkle.vsh */; };
+		B7DC685025C299A700FF09CA /* Sparkle.fsh in Resources */ = {isa = PBXBuildFile; fileRef = B7DC684F25C299A700FF09CA /* Sparkle.fsh */; };
+		B7DC685725C2A82000FF09CA /* Glitch.fsh in Resources */ = {isa = PBXBuildFile; fileRef = B7DC685525C2A82000FF09CA /* Glitch.fsh */; };
+		B7DC685825C2A82000FF09CA /* Glitch.vsh in Resources */ = {isa = PBXBuildFile; fileRef = B7DC685625C2A82000FF09CA /* Glitch.vsh */; };
+		B7DC685D25C2AC9700FF09CA /* Vertigo.fsh in Resources */ = {isa = PBXBuildFile; fileRef = B7DC685B25C2AC9700FF09CA /* Vertigo.fsh */; };
+		B7DC685E25C2AC9700FF09CA /* Vertigo.vsh in Resources */ = {isa = PBXBuildFile; fileRef = B7DC685C25C2AC9700FF09CA /* Vertigo.vsh */; };
+		B7DC686725C2D96500FF09CA /* RTStrechViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7DC686625C2D96500FF09CA /* RTStrechViewController.m */; };
+		B7DC686C25C2F32A00FF09CA /* RTStrechResultView.m in Sources */ = {isa = PBXBuildFile; fileRef = B7DC686B25C2F32A00FF09CA /* RTStrechResultView.m */; };
+		F9F978E1262176388A14A676 /* Pods_RTFilter002.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5212689B3D889ABBC5F42F3D /* Pods_RTFilter002.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5212689B3D889ABBC5F42F3D /* Pods_RTFilter002.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RTFilter002.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A83C700E5D61B04FE45E6BE5 /* Pods-RTFilter002.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RTFilter002.debug.xcconfig"; path = "Target Support Files/Pods-RTFilter002/Pods-RTFilter002.debug.xcconfig"; sourceTree = "<group>"; };
+		B7D28E2A25C70BA900483CED /* RTPickerPhotoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTPickerPhotoManager.h; sourceTree = "<group>"; };
+		B7D28E2B25C70BA900483CED /* RTPickerPhotoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTPickerPhotoManager.m; sourceTree = "<group>"; };
+		B7D28E3025C7128800483CED /* UIImage+RTExt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+RTExt.h"; sourceTree = "<group>"; };
+		B7D28E3125C7128800483CED /* UIImage+RTExt.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RTExt.m"; sourceTree = "<group>"; };
+		B7D28E3525C7C0B500483CED /* RTHud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTHud.h; sourceTree = "<group>"; };
+		B7D28E3625C7C0B500483CED /* RTHud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTHud.m; sourceTree = "<group>"; };
+		B7D28E4025C7D8AF00483CED /* RTFilter.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTFilter.pch; sourceTree = "<group>"; };
+		B7DC678225C117E500FF09CA /* RTFilter002.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RTFilter002.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7DC678525C117E500FF09CA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B7DC678625C117E500FF09CA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B7DC679125C117E600FF09CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B7DC679425C117E600FF09CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B7DC679625C117E600FF09CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7DC679725C117E600FF09CA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B7DC67A225C1188B00FF09CA /* RTHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTHomeViewController.h; sourceTree = "<group>"; };
+		B7DC67A325C1188B00FF09CA /* RTHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTHomeViewController.m; sourceTree = "<group>"; };
+		B7DC67B225C11C2B00FF09CA /* RTPresent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTPresent.h; sourceTree = "<group>"; };
+		B7DC67B325C11C2B00FF09CA /* RTPresent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTPresent.m; sourceTree = "<group>"; };
+		B7DC67C625C1264200FF09CA /* RTTableViewDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTTableViewDataSource.h; sourceTree = "<group>"; };
+		B7DC67C725C1264200FF09CA /* RTTableViewDataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTTableViewDataSource.m; sourceTree = "<group>"; };
+		B7DC67CB25C1596400FF09CA /* RTEditViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTEditViewController.h; sourceTree = "<group>"; };
+		B7DC67CC25C1596400FF09CA /* RTEditViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTEditViewController.m; sourceTree = "<group>"; };
+		B7DC67D025C15DCC00FF09CA /* RTEditGLTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTEditGLTool.h; sourceTree = "<group>"; };
+		B7DC67D125C15DCC00FF09CA /* RTEditGLTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTEditGLTool.m; sourceTree = "<group>"; };
+		B7DC67EA25C1741200FF09CA /* Normal.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Normal.fsh; sourceTree = "<group>"; };
+		B7DC67EB25C1741200FF09CA /* Normal.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Normal.vsh; sourceTree = "<group>"; };
+		B7DC67F825C1BCAD00FF09CA /* SplitScreen2.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = SplitScreen2.fsh; sourceTree = "<group>"; };
+		B7DC67F925C1BCAD00FF09CA /* SplitScreen3.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = SplitScreen3.vsh; sourceTree = "<group>"; };
+		B7DC67FA25C1BCAD00FF09CA /* SplitScreen3.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = SplitScreen3.fsh; sourceTree = "<group>"; };
+		B7DC67FB25C1BCAD00FF09CA /* SplitScreen4.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = SplitScreen4.vsh; sourceTree = "<group>"; };
+		B7DC67FC25C1BCAD00FF09CA /* SplitScreen9.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = SplitScreen9.fsh; sourceTree = "<group>"; };
+		B7DC67FD25C1BCAD00FF09CA /* SplitScreen9.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = SplitScreen9.vsh; sourceTree = "<group>"; };
+		B7DC67FE25C1BCAD00FF09CA /* SplitScreen4.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = SplitScreen4.fsh; sourceTree = "<group>"; };
+		B7DC67FF25C1BCAD00FF09CA /* SplitScreen6.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = SplitScreen6.vsh; sourceTree = "<group>"; };
+		B7DC680025C1BCAD00FF09CA /* SplitScreen2.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = SplitScreen2.vsh; sourceTree = "<group>"; };
+		B7DC680125C1BCAD00FF09CA /* SplitScreen6.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = SplitScreen6.fsh; sourceTree = "<group>"; };
+		B7DC681625C1CDBE00FF09CA /* Gray.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Gray.vsh; sourceTree = "<group>"; };
+		B7DC681A25C1CDCE00FF09CA /* Gray.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Gray.fsh; sourceTree = "<group>"; };
+		B7DC681D25C1D4A000FF09CA /* Negative.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Negative.vsh; sourceTree = "<group>"; };
+		B7DC682025C1D4AF00FF09CA /* Negative.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Negative.fsh; sourceTree = "<group>"; };
+		B7DC682325C1D8EC00FF09CA /* Mosaic4.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Mosaic4.vsh; sourceTree = "<group>"; };
+		B7DC682625C1D8FA00FF09CA /* Mosaic4.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Mosaic4.fsh; sourceTree = "<group>"; };
+		B7DC682A25C1DF0800FF09CA /* Mosaic6.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Mosaic6.vsh; sourceTree = "<group>"; };
+		B7DC682D25C1DF1300FF09CA /* Mosaic6.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Mosaic6.fsh; sourceTree = "<group>"; };
+		B7DC683025C1EC8300FF09CA /* Mosaic3.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Mosaic3.fsh; sourceTree = "<group>"; };
+		B7DC683125C1EC8300FF09CA /* Mosaic3.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Mosaic3.vsh; sourceTree = "<group>"; };
+		B7DC683925C27EE900FF09CA /* Scale.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Scale.vsh; sourceTree = "<group>"; };
+		B7DC683D25C27EF800FF09CA /* Scale.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Scale.fsh; sourceTree = "<group>"; };
+		B7DC684025C2878700FF09CA /* SoulOut.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = SoulOut.vsh; sourceTree = "<group>"; };
+		B7DC684325C2879500FF09CA /* SoulOut.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = SoulOut.fsh; sourceTree = "<group>"; };
+		B7DC684625C2927700FF09CA /* ScaleMove.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ScaleMove.vsh; sourceTree = "<group>"; };
+		B7DC684925C2928C00FF09CA /* ScaleMove.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ScaleMove.fsh; sourceTree = "<group>"; };
+		B7DC684C25C2999B00FF09CA /* Sparkle.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Sparkle.vsh; sourceTree = "<group>"; };
+		B7DC684F25C299A700FF09CA /* Sparkle.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Sparkle.fsh; sourceTree = "<group>"; };
+		B7DC685525C2A82000FF09CA /* Glitch.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Glitch.fsh; sourceTree = "<group>"; };
+		B7DC685625C2A82000FF09CA /* Glitch.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Glitch.vsh; sourceTree = "<group>"; };
+		B7DC685B25C2AC9700FF09CA /* Vertigo.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Vertigo.fsh; sourceTree = "<group>"; };
+		B7DC685C25C2AC9700FF09CA /* Vertigo.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Vertigo.vsh; sourceTree = "<group>"; };
+		B7DC686525C2D96500FF09CA /* RTStrechViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTStrechViewController.h; sourceTree = "<group>"; };
+		B7DC686625C2D96500FF09CA /* RTStrechViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTStrechViewController.m; sourceTree = "<group>"; };
+		B7DC686A25C2F32A00FF09CA /* RTStrechResultView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTStrechResultView.h; sourceTree = "<group>"; };
+		B7DC686B25C2F32A00FF09CA /* RTStrechResultView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTStrechResultView.m; sourceTree = "<group>"; };
+		F7D08402C613F34959B6707A /* Pods-RTFilter002.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RTFilter002.release.xcconfig"; path = "Target Support Files/Pods-RTFilter002/Pods-RTFilter002.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B7DC677F25C117E500FF09CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9F978E1262176388A14A676 /* Pods_RTFilter002.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		438EE25F33403D3807589D8C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A83C700E5D61B04FE45E6BE5 /* Pods-RTFilter002.debug.xcconfig */,
+				F7D08402C613F34959B6707A /* Pods-RTFilter002.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AFCCBD57BD4B871F98DC16E3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5212689B3D889ABBC5F42F3D /* Pods_RTFilter002.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B7D28E2925C70B9600483CED /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B7D28E2A25C70BA900483CED /* RTPickerPhotoManager.h */,
+				B7D28E2B25C70BA900483CED /* RTPickerPhotoManager.m */,
+				B7D28E3025C7128800483CED /* UIImage+RTExt.h */,
+				B7D28E3125C7128800483CED /* UIImage+RTExt.m */,
+				B7D28E3525C7C0B500483CED /* RTHud.h */,
+				B7D28E3625C7C0B500483CED /* RTHud.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		B7DC677925C117E500FF09CA = {
+			isa = PBXGroup;
+			children = (
+				B7DC678425C117E500FF09CA /* RTFilter002 */,
+				B7DC678325C117E500FF09CA /* Products */,
+				438EE25F33403D3807589D8C /* Pods */,
+				AFCCBD57BD4B871F98DC16E3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B7DC678325C117E500FF09CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B7DC678225C117E500FF09CA /* RTFilter002.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B7DC678425C117E500FF09CA /* RTFilter002 */ = {
+			isa = PBXGroup;
+			children = (
+				B7D28E2925C70B9600483CED /* Common */,
+				B7DC67F725C1BC5F00FF09CA /* Shaders */,
+				B7DC686425C2D92B00FF09CA /* RTStrechModule */,
+				B7DC67CA25C158F100FF09CA /* RTFilterModule */,
+				B7DC67A825C11B1B00FF09CA /* RTHome */,
+				B7DC678525C117E500FF09CA /* AppDelegate.h */,
+				B7DC678625C117E500FF09CA /* AppDelegate.m */,
+				B7DC679125C117E600FF09CA /* Assets.xcassets */,
+				B7DC679325C117E600FF09CA /* LaunchScreen.storyboard */,
+				B7DC679625C117E600FF09CA /* Info.plist */,
+				B7DC679725C117E600FF09CA /* main.m */,
+				B7D28E4025C7D8AF00483CED /* RTFilter.pch */,
+			);
+			path = RTFilter002;
+			sourceTree = "<group>";
+		};
+		B7DC67A825C11B1B00FF09CA /* RTHome */ = {
+			isa = PBXGroup;
+			children = (
+				B7DC67A225C1188B00FF09CA /* RTHomeViewController.h */,
+				B7DC67A325C1188B00FF09CA /* RTHomeViewController.m */,
+				B7DC67B225C11C2B00FF09CA /* RTPresent.h */,
+				B7DC67B325C11C2B00FF09CA /* RTPresent.m */,
+				B7DC67C625C1264200FF09CA /* RTTableViewDataSource.h */,
+				B7DC67C725C1264200FF09CA /* RTTableViewDataSource.m */,
+			);
+			path = RTHome;
+			sourceTree = "<group>";
+		};
+		B7DC67CA25C158F100FF09CA /* RTFilterModule */ = {
+			isa = PBXGroup;
+			children = (
+				B7DC67CB25C1596400FF09CA /* RTEditViewController.h */,
+				B7DC67CC25C1596400FF09CA /* RTEditViewController.m */,
+				B7DC67D025C15DCC00FF09CA /* RTEditGLTool.h */,
+				B7DC67D125C15DCC00FF09CA /* RTEditGLTool.m */,
+			);
+			path = RTFilterModule;
+			sourceTree = "<group>";
+		};
+		B7DC67F725C1BC5F00FF09CA /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				B7DC67EB25C1741200FF09CA /* Normal.vsh */,
+				B7DC67EA25C1741200FF09CA /* Normal.fsh */,
+				B7DC680025C1BCAD00FF09CA /* SplitScreen2.vsh */,
+				B7DC67F825C1BCAD00FF09CA /* SplitScreen2.fsh */,
+				B7DC67F925C1BCAD00FF09CA /* SplitScreen3.vsh */,
+				B7DC67FA25C1BCAD00FF09CA /* SplitScreen3.fsh */,
+				B7DC67FB25C1BCAD00FF09CA /* SplitScreen4.vsh */,
+				B7DC67FE25C1BCAD00FF09CA /* SplitScreen4.fsh */,
+				B7DC67FF25C1BCAD00FF09CA /* SplitScreen6.vsh */,
+				B7DC680125C1BCAD00FF09CA /* SplitScreen6.fsh */,
+				B7DC67FD25C1BCAD00FF09CA /* SplitScreen9.vsh */,
+				B7DC67FC25C1BCAD00FF09CA /* SplitScreen9.fsh */,
+				B7DC681625C1CDBE00FF09CA /* Gray.vsh */,
+				B7DC681A25C1CDCE00FF09CA /* Gray.fsh */,
+				B7DC681D25C1D4A000FF09CA /* Negative.vsh */,
+				B7DC682025C1D4AF00FF09CA /* Negative.fsh */,
+				B7DC682325C1D8EC00FF09CA /* Mosaic4.vsh */,
+				B7DC682625C1D8FA00FF09CA /* Mosaic4.fsh */,
+				B7DC682A25C1DF0800FF09CA /* Mosaic6.vsh */,
+				B7DC682D25C1DF1300FF09CA /* Mosaic6.fsh */,
+				B7DC683125C1EC8300FF09CA /* Mosaic3.vsh */,
+				B7DC683025C1EC8300FF09CA /* Mosaic3.fsh */,
+				B7DC683925C27EE900FF09CA /* Scale.vsh */,
+				B7DC683D25C27EF800FF09CA /* Scale.fsh */,
+				B7DC684025C2878700FF09CA /* SoulOut.vsh */,
+				B7DC684325C2879500FF09CA /* SoulOut.fsh */,
+				B7DC684625C2927700FF09CA /* ScaleMove.vsh */,
+				B7DC684925C2928C00FF09CA /* ScaleMove.fsh */,
+				B7DC684C25C2999B00FF09CA /* Sparkle.vsh */,
+				B7DC684F25C299A700FF09CA /* Sparkle.fsh */,
+				B7DC685625C2A82000FF09CA /* Glitch.vsh */,
+				B7DC685525C2A82000FF09CA /* Glitch.fsh */,
+				B7DC685C25C2AC9700FF09CA /* Vertigo.vsh */,
+				B7DC685B25C2AC9700FF09CA /* Vertigo.fsh */,
+			);
+			path = Shaders;
+			sourceTree = "<group>";
+		};
+		B7DC686425C2D92B00FF09CA /* RTStrechModule */ = {
+			isa = PBXGroup;
+			children = (
+				B7DC686525C2D96500FF09CA /* RTStrechViewController.h */,
+				B7DC686625C2D96500FF09CA /* RTStrechViewController.m */,
+				B7DC686A25C2F32A00FF09CA /* RTStrechResultView.h */,
+				B7DC686B25C2F32A00FF09CA /* RTStrechResultView.m */,
+			);
+			path = RTStrechModule;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B7DC678125C117E500FF09CA /* RTFilter002 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7DC679B25C117E600FF09CA /* Build configuration list for PBXNativeTarget "RTFilter002" */;
+			buildPhases = (
+				CC629BF4FA49E478B83FFDAF /* [CP] Check Pods Manifest.lock */,
+				B7DC677E25C117E500FF09CA /* Sources */,
+				B7DC677F25C117E500FF09CA /* Frameworks */,
+				B7DC678025C117E500FF09CA /* Resources */,
+				6E2F487C4099244E401ACB61 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RTFilter002;
+			productName = RTFilter002;
+			productReference = B7DC678225C117E500FF09CA /* RTFilter002.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B7DC677A25C117E500FF09CA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					B7DC678125C117E500FF09CA = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = B7DC677D25C117E500FF09CA /* Build configuration list for PBXProject "RTFilter002" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B7DC677925C117E500FF09CA;
+			productRefGroup = B7DC678325C117E500FF09CA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B7DC678125C117E500FF09CA /* RTFilter002 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B7DC678025C117E500FF09CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7DC683225C1EC8300FF09CA /* Mosaic3.fsh in Resources */,
+				B7DC685D25C2AC9700FF09CA /* Vertigo.fsh in Resources */,
+				B7DC680B25C1BCAD00FF09CA /* SplitScreen6.fsh in Resources */,
+				B7DC685025C299A700FF09CA /* Sparkle.fsh in Resources */,
+				B7DC680725C1BCAD00FF09CA /* SplitScreen9.vsh in Resources */,
+				B7DC682B25C1DF0800FF09CA /* Mosaic6.vsh in Resources */,
+				B7DC683325C1EC8300FF09CA /* Mosaic3.vsh in Resources */,
+				B7DC682125C1D4AF00FF09CA /* Negative.fsh in Resources */,
+				B7DC683A25C27EE900FF09CA /* Scale.vsh in Resources */,
+				B7DC680625C1BCAD00FF09CA /* SplitScreen9.fsh in Resources */,
+				B7DC682725C1D8FA00FF09CA /* Mosaic4.fsh in Resources */,
+				B7DC684D25C2999B00FF09CA /* Sparkle.vsh in Resources */,
+				B7DC67ED25C1741200FF09CA /* Normal.vsh in Resources */,
+				B7DC681E25C1D4A000FF09CA /* Negative.vsh in Resources */,
+				B7DC680825C1BCAD00FF09CA /* SplitScreen4.fsh in Resources */,
+				B7DC682425C1D8EC00FF09CA /* Mosaic4.vsh in Resources */,
+				B7DC684125C2878700FF09CA /* SoulOut.vsh in Resources */,
+				B7DC679525C117E600FF09CA /* LaunchScreen.storyboard in Resources */,
+				B7DC684725C2927700FF09CA /* ScaleMove.vsh in Resources */,
+				B7DC680A25C1BCAD00FF09CA /* SplitScreen2.vsh in Resources */,
+				B7DC680925C1BCAD00FF09CA /* SplitScreen6.vsh in Resources */,
+				B7DC680225C1BCAD00FF09CA /* SplitScreen2.fsh in Resources */,
+				B7DC67EC25C1741200FF09CA /* Normal.fsh in Resources */,
+				B7DC685E25C2AC9700FF09CA /* Vertigo.vsh in Resources */,
+				B7DC680525C1BCAD00FF09CA /* SplitScreen4.vsh in Resources */,
+				B7DC681725C1CDBE00FF09CA /* Gray.vsh in Resources */,
+				B7DC685725C2A82000FF09CA /* Glitch.fsh in Resources */,
+				B7DC681B25C1CDCE00FF09CA /* Gray.fsh in Resources */,
+				B7DC685825C2A82000FF09CA /* Glitch.vsh in Resources */,
+				B7DC682E25C1DF1300FF09CA /* Mosaic6.fsh in Resources */,
+				B7DC683E25C27EF800FF09CA /* Scale.fsh in Resources */,
+				B7DC684A25C2928C00FF09CA /* ScaleMove.fsh in Resources */,
+				B7DC679225C117E600FF09CA /* Assets.xcassets in Resources */,
+				B7DC680425C1BCAD00FF09CA /* SplitScreen3.fsh in Resources */,
+				B7DC680325C1BCAD00FF09CA /* SplitScreen3.vsh in Resources */,
+				B7DC684425C2879500FF09CA /* SoulOut.fsh in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6E2F487C4099244E401ACB61 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RTFilter002/Pods-RTFilter002-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RTFilter002/Pods-RTFilter002-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RTFilter002/Pods-RTFilter002-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC629BF4FA49E478B83FFDAF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RTFilter002-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B7DC677E25C117E500FF09CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7DC67A425C1188B00FF09CA /* RTHomeViewController.m in Sources */,
+				B7DC67D225C15DCC00FF09CA /* RTEditGLTool.m in Sources */,
+				B7D28E3725C7C0B500483CED /* RTHud.m in Sources */,
+				B7D28E3225C7128800483CED /* UIImage+RTExt.m in Sources */,
+				B7DC67C825C1264200FF09CA /* RTTableViewDataSource.m in Sources */,
+				B7D28E2C25C70BA900483CED /* RTPickerPhotoManager.m in Sources */,
+				B7DC686C25C2F32A00FF09CA /* RTStrechResultView.m in Sources */,
+				B7DC67B425C11C2B00FF09CA /* RTPresent.m in Sources */,
+				B7DC678725C117E500FF09CA /* AppDelegate.m in Sources */,
+				B7DC686725C2D96500FF09CA /* RTStrechViewController.m in Sources */,
+				B7DC67CD25C1596400FF09CA /* RTEditViewController.m in Sources */,
+				B7DC679825C117E600FF09CA /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B7DC679325C117E600FF09CA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B7DC679425C117E600FF09CA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B7DC679925C117E600FF09CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B7DC679A25C117E600FF09CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B7DC679C25C117E600FF09CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A83C700E5D61B04FE45E6BE5 /* Pods-RTFilter002.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 55WHPN47NF;
+				GCC_PREFIX_HEADER = RTFilter002/RTFilter.pch;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
+				INFOPLIST_FILE = RTFilter002/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.mopon.RTFilter002;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = common_profile_dev;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B7DC679D25C117E600FF09CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7D08402C613F34959B6707A /* Pods-RTFilter002.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 55WHPN47NF;
+				GCC_PREFIX_HEADER = RTFilter002/RTFilter.pch;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
+				INFOPLIST_FILE = RTFilter002/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.mopon.RTFilter002;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = common_profile_dev;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B7DC677D25C117E500FF09CA /* Build configuration list for PBXProject "RTFilter002" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7DC679925C117E600FF09CA /* Debug */,
+				B7DC679A25C117E600FF09CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7DC679B25C117E600FF09CA /* Build configuration list for PBXNativeTarget "RTFilter002" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7DC679C25C117E600FF09CA /* Debug */,
+				B7DC679D25C117E600FF09CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B7DC677A25C117E500FF09CA /* Project object */;
+}

@@ -1,0 +1,6 @@
+framework module Pods_RTFilter002 {
+  umbrella header "Pods-RTFilter002-umbrella.h"
+
+  export *
+  module * { export * }
+}
